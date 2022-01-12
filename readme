@@ -1,1 +1,27 @@
 Hi.. This is a Demo Jenkins Pipeline structure.
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+         stage('Build') {
+            steps {
+                echo 'Build Project'
+            }
+        }
+         stage('Deploy') {
+            steps {
+                echo 'Deploy Project'
+            }
+        }
+         stage('Release') {
+            steps {
+                echo 'Realeasing'
+            }
+        }
+    }
+}
